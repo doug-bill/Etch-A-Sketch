@@ -4,16 +4,10 @@ const labels = document.createElement("div");
 labels.classList.add("labels");
 body.appendChild(labels);
 
-
-const getGridSize = document.createElement("input");
-getGridSize.classList.add("input");
-labels.appendChild(getGridSize);
-
 const btn = document.createElement("button");
 btn.classList.add("button");
-btn.textContent = "Create Grid";
+btn.textContent = "Create grid";
 labels.appendChild(btn);
- 
 
 const container = document.createElement("div");
 container.classList.add("flex-container");
@@ -22,37 +16,36 @@ container.style.backgroundColor = "white";
 
 body.appendChild(container);
 
-
 function createGrid(num){
 
  for (let i = 0 ; i < num* num; i++){
         
-  const col = document.createElement("div");
-  col.classList.add("col");
-  col.style.flexBasis = `${100 / num}%`;
-  container.appendChild(col); 
+  const cell = document.createElement("div");
+  cell.classList.add("col");
+  cell.style.flexBasis = `${100 / num}%`;
+  container.appendChild(cell); 
       
   }
 
 }
 
-//const col = document.getElementsByClassName("col");
-/*   
+btn.addEventListener("click", () => {
 
-labels.addEventListener("click", () => {
+let newGrid = parseInt(window.prompt("Choose a grid size from 1 - 100:"));
 
-  
-  event.preventDefault();
- // container.removeChild(col);
-  const grid = getGridSize.value;
-  console.log(grid);
-  getGridSize.value ='';
-  createGrid(grid);
- 
 
+console.log(newGrid)
+
+  if(!isNaN(newGrid) && newGrid > 0 && newGrid <= 100  ){
+  //  while (container.firstChild){
+  //  container.removeChild(container.firstChild);
+   //  }
+   container.innerHTML = "";
+     createGrid(newGrid);
+  }    
 });
- */
 
-createGrid(16);
+
+createGrid(0);
    
 
