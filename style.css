@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'JetBrainsMono Nerd Font';
-  src: url('path/to/JetBrainsMonoNerdFont-Regular.woff2') format('woff2'),
-       url('path/to/JetBrainsMonoNerdFont-Regular.woff') format('woff');
+  src:'/JetBrainsMono-2.304/fonts/webfonts' ;
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* Optional: controls how font loads */
@@ -12,45 +11,63 @@ pre, code {
 }
 
 body {
-    background-color:#C3DCF4;
-    background-size:auto;
-    color:black;
-    font-family: 'JetBrainsMono Nerd Font', monospace;
+  background-color:#C3DCF4;
+  background-size:auto;
+  color:black;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
 }
 
 H1{
-text-align: center;
-text-decoration: underline;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .flex-container{
-width: 700px;
-height: 700px;
-margin: 0 auto;
-border: 4px solid black;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+  border: 4px solid black;
+  padding: 2px;
+  display:flex;
+  flex-wrap: wrap;
 
-display:flex;
-flex-wrap: wrap;
-/* justify-content: flex-start;
-align-content:flex-start;  */
 }
 
 .col{
-  
-    flex:1;
-    border: 4px solid blanchedalmond;
-    background-color: blueviolet;
-    border-radius:8px;
-    padding: 1em;
-  
+  box-sizing: border-box;
+  flex-grow:1;
+  border: .25px solid blanchedalmond;
+  background-color: blueviolet;
+  border-radius:8px;
 }
 
-.row{
-    flex:1;
-    border: 4px solid blanchedalmond;
-    background-color: red;
 
-    padding: 1em;
+.col:hover{
+  background-color: tomato;
+}
+
+.labels{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+}
+
+.input{
   
+  height: 30px;
+  width: 60px;
+  font-size: 24px;
+  margin: 0 16px;
+}
+
+.button{
+  height: 35px;
+  padding: 4px;
+  font-size: 20px;
+  margin: 0 16px;
+
+
 }
 
