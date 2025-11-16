@@ -46,27 +46,20 @@ container.addEventListener("mousedown" ,(event) => {
   if (event.target.classList.contains("col") && isDrawing == true) {
       event.target.style.backgroundColor = "turquoise"; 
 
-  container.addEventListener("mouseover" , (event)=>{
+      container.addEventListener("mouseover" , (event)=>{
 
-   if (event.target.classList.contains("col") && isDrawing == true) {
-      event.target.style.backgroundColor = "turquoise"; 
-  } 
-});
-  
+       if (event.target.classList.contains("col") && isDrawing == true) {
+        event.target.style.backgroundColor = "turquoise"; 
+      }});
 
-  } 
-});
-
+  }});
 
 body.addEventListener("mouseup", event => {
     isDrawing = false;
-
 });
 
 
-
-
-  
+// for the Raibow --- try testing HSLV
 /*   const cell = event.target;
   if (!cell.classList.contains("col")) return;
 
