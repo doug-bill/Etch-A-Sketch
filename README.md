@@ -5,6 +5,8 @@ Part of the curruculum of The Odin Project.
 
 It is built using **HTML, CSS, and vanilla JavaScript**, with no external libraries.
 
+Interactive: https://doug-bill.github.io/Etch-A-Sketch/
+
 ---
 
 ## ✨ Features
