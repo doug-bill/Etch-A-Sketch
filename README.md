@@ -1,7 +1,7 @@
 # 🎨 Etch a Sketch — Interactive Drawing Grid
 
 This project is a simple and interactive digital **Etch a Sketch**, where users can draw on a customizable grid by clicking and dragging the mouse.
-Part of the curruculum of The Odin Project.
+Part of the curriculum of The Odin Project.
 
 It is built using **HTML, CSS, and vanilla JavaScript**, with no external libraries.
 
@@ -66,13 +66,9 @@ mouseup
 
 Each mode changes the color applied to the target cell.
 
-🎨 UI Overview
-
-Minimalist interface focused on the drawing canvas.
-
-Color palette includes turquoise, blueviolet, and tomato for hover effects.
-
-Canvas has a classic square frame, giving a retro Etch a Sketch feel.
+## ⚠️ Known Issues / Limitações
+- On mobile devices, the click-and-drag function is not working nativily - This is the next TODO 
+- Grids above 80x80 can slowdown the app on old PC's/laptops
 
 👨‍💻 Author
 
